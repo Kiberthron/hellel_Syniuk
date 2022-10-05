@@ -39,8 +39,11 @@ print(model is model_id)
 def main_function():
     global model
     global model_id
-    model = int(" ".join(map(str, model)))
-    model_id = int(" ".join(map(str, model_id)))
+    model = (" ".join(map(str, model)))
+    model_id = (" ".join(map(str, model_id)))
+    model = int(model)
+    model_id = int(model_id)
+
 
 main_function()
 
