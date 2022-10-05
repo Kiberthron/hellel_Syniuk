@@ -6,7 +6,8 @@ print(board_id == serial == number)
 print(id(board_id))
 print(board_id is serial is number)
 
-def mainFunction():
+
+def main_function():
     global board_id
     global serial
     global number
@@ -18,34 +19,32 @@ def mainFunction():
     print(id(serial))
     print(id(number))
     print(board_id is serial is number)
-mainFunction()
+
+
+main_function()
 
 print(type(board_id))
 print(type(serial))
 print(type(number))
 
-model = [11.1]
-model_id = [11.1]
+model = [11]
+model_id = [11]
 
 print(id(model))
 print(id(model_id))
 print(model == model_id)
 print(model is model_id)
 
-model_id = model
 
+def main_function():
+    global model
+    global model_id
+    model = int(" ".join(map(str, model)))
+    model_id = int(" ".join(map(str, model_id)))
+
+main_function()
+
+print(id(model))
+print(id(model_id))
 print(model == model_id)
 print(model is model_id)
-
-
-
-
-
-
-
-
-
-
-
-
-
