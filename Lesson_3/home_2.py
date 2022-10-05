@@ -20,6 +20,10 @@ def mainFunction():
     print(board_id is serial is number)
 mainFunction()
 
+print(type(board_id))
+print(type(serial))
+print(type(number))
+
 model = [11.1]
 model_id = [11.1]
 
