@@ -5,9 +5,9 @@ while True:
         print("Ошибка, повторите ввод")
     elif int(age) < 10:
         print("Привет, шкет", name)
-    elif 10 <= int(age) <= 18:
+    elif int(age) <= 18:
         print("Как жизнь", name)
-    elif 18 < int(age) < 100:
+    elif int(age) < 100:
         print("Что желаете", name)
     else:
         print(name, "вы лжете - в наше время столько не живут", sep=', ')
