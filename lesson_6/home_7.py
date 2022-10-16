@@ -6,7 +6,6 @@ print('Привет,', name, '. Угадай число от 1 до 10')
 
 def play():
     import random
-    global qnum, tries
     number = random.randint(1, 10)
     for tries in range(1, 5):
         qnum = input("Ваше число? ")
@@ -23,7 +22,6 @@ def play():
         print('Поздравляю,', name, 'Ты отгадал число с', tries, 'раза')
     elif int(qnum) != number:
         print('Увы,', name, ', не угадал')
-    return qnum
 
 
 play()
