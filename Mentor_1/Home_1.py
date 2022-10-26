@@ -18,8 +18,8 @@ sql_db = '''
     SELECT FirstName
         FROM customers;
 '''
+print("-" * 50)
 result = cur.execute(sql_db).fetchall()
-
 array_d = {}.fromkeys(result, 0)
 for a in result:
     array_d[a] += 1
