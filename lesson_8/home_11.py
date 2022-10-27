@@ -3,8 +3,6 @@
 # регистр букв не учитывать.
 inputdata = ['Страна', 'шалаш', 'Летел', 'вертолёт', 'УЧУ', 'мэм', 'язык']
 
-import re
-
 
 def check(text: str) -> bool:
     text = text.lower()
