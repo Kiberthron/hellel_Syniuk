@@ -7,9 +7,12 @@ from datetime import datetime
 
 
 def decorator(result):
-    time = datetime.now()
-    print("Used time:", datetime.now() - time)
-    return result
+    def wraper(*args, **kwargs):
+        time = datetime.now()
+        res1 = result(*args, **kwargs)
+        print("Used time:", (datetime.now() - time).microseconds, "ms")
+        return res1
+    return wraper
 
 
 @decorator
