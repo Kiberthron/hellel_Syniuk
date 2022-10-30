@@ -1,18 +1,19 @@
 import os
 import sqlite3
-
+# 5216063.999999904
 db_pass = os.path.join(os.getcwd(), 'chinook.db')
 connection = sqlite3.connect(db_pass)
 cur = connection.cursor()
 
 sql_db = '''
-    SELECT SUM (UnitPrice) * SUM (Quantity)
+    SELECT SUM (UnitPrice * Quantity)
         FROM invoice_items;
 '''
 result = cur.execute(sql_db).fetchall()
 
 for result in result:
     print(*result)
+
 
 sql_db = '''
     SELECT FirstName
