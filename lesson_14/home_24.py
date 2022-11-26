@@ -17,9 +17,9 @@ class Person:
     @staticmethod
 
     def is_adult(age):
-        return
+        return age > 18
 
-person1 = Person('Maksym', 25)
+person1 = Person('Maksym', 3)
 person2 = Person.from_birth_year('Daniel', 2005)
 print(person1.name, person1.age)
 print(person2.name, person2.age)
