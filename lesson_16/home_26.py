@@ -1,3 +1,7 @@
+# Создать генератор геометрической прог
+
+
+
 def geom_generator(max_number):
   i = 1
   while i < max_number:
